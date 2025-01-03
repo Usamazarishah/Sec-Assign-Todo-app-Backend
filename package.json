@@ -1,0 +1,26 @@
+{
+  "name": "sec-assign-todo-app-backend",
+  "version": "1.0.0",
+  "description": "Sec-Assign-Todo-app-Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usamazarishah/Sec-Assign-Todo-app-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Usamazarishah/Sec-Assign-Todo-app-Backend/issues"
+  },
+  "homepage": "https://github.com/Usamazarishah/Sec-Assign-Todo-app-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
