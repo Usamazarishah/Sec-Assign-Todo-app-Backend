@@ -12,7 +12,7 @@ app.use(cors({ origin: ["http://localhost:5173"]}));
 
 
 // get all todos api
-app.get('/all-todos', (req, res) => {
+app.get('/api/v1/todos', (req, res) => {
 
   const message = !todos.length ? "todo empty" : "all todos fetched"
 
@@ -21,7 +21,7 @@ app.get('/all-todos', (req, res) => {
 
 
 // add todo api
-app.post('/add-todo', (req, res) => {
+app.post('/api/v1/todo', (req, res) => {
     
     const todo = req.body.todo
     const obj = {
@@ -35,7 +35,7 @@ app.post('/add-todo', (req, res) => {
 
 
 // edit or update todo api
-app.patch('/edit-todo/:id', (req, res) => {
+app.patch('/api/v1/todo/:id', (req, res) => {
    const id = req.params.id
    
    let isFound = false;
@@ -66,7 +66,7 @@ app.patch('/edit-todo/:id', (req, res) => {
 
 
 // delete todo api
-app.delete('/delete-todo/:id', (req, res) => {
+app.delete('/api/v1/todo/:id', (req, res) => {
   const id = req.params.id
    
   let isFound = false;
