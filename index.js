@@ -8,7 +8,7 @@ const todos = []
  //to convert body into JSON 
 app.use(express.json());
 
-app.use(cors({ origin: ["https://graceful-vacherin-54fc59.netlify.app","http://localhost:5173"]}));
+app.use(cors({ origin: ["https://sec-assign-todo.netlify.app","http://localhost:5173"]}));
 
 
 // get all todos api
