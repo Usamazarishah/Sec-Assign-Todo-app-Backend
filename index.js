@@ -22,7 +22,7 @@ app.get("/api/v1/todos", async (req, res) => {
       // projection ma hum data ko filter kar sakte ha konsa data front end pe aye ga or konsa nahi
 
       // {createdAt:0, updatedAt:0, __v:0, ip:0} //projection (0 wala front end pe nahi aye ga)
-      // {todoContent:1, _id:0} //projection (1 wala front end pe aye ga, _id nahi aye ge sirf id ki exception ha (0, 1) ma)
+      // {todoContent:1, _id:0} //projection (1 wala front end pa aye ga, _id nahi aye ge sirf id ki exception ha (0, 1) ma)
       { todoContent: 1 } //projection (1 wala front end pe aye ga)
     );
 
